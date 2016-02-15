@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaseTemplate</string>
+    <string name="action_settings">Settings</string>
+</resources>
