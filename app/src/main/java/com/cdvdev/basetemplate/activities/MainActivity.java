@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import com.cdvdev.basetemplate.R;
 import com.cdvdev.basetemplate.fragments.TestFirstFragment;
 import com.cdvdev.basetemplate.fragments.TestSecondFragment;
-import com.cdvdev.basetemplate.listeners.FragmentsListener;
+import com.cdvdev.basetemplate.interfaces.FragmentsListener;
 
 public class MainActivity extends BaseActivity implements FragmentsListener{
 

@@ -1,4 +1,4 @@
-package com.cdvdev.basetemplate.interfaces;
+package com.cdvdev.basetemplate.views;
 
 import android.content.Context;
 import android.view.View;

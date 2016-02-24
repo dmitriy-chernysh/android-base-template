@@ -1,4 +1,4 @@
-package com.cdvdev.basetemplate.listeners;
+package com.cdvdev.basetemplate.interfaces;
 
 /**
  * Listener for actions in the fragments
