@@ -1,4 +1,4 @@
-package com.cdvdev.basetemplate.fragments;
+package com.cdvdev.basetemplate.views.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

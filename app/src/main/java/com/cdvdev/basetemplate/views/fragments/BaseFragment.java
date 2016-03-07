@@ -1,21 +1,21 @@
-package com.cdvdev.basetemplate.fragments;
+package com.cdvdev.basetemplate.views.fragments;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ListFragment;
+import android.support.v4.app.Fragment;
 
 import com.cdvdev.basetemplate.interfaces.FragmentsListener;
 
 /**
- * Base class for ListFragments
+ * Base class for Fragments
  * <p/>
- * Note: Write here a common code for all ListFragments
+ * Note: Write here a common code for all Fragments
  *
  * @author Dmitriy V. Chernysh (dmitriy.chernysh@gmail.com)
  */
-public class BaseListFragment extends ListFragment {
+public abstract class BaseFragment extends Fragment {
 
     protected FragmentsListener mFragmentsListener;
 

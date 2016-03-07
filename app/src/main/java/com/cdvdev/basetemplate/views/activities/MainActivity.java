@@ -1,4 +1,4 @@
-package com.cdvdev.basetemplate.activities;
+package com.cdvdev.basetemplate.views.activities;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cdvdev.basetemplate.R;
-import com.cdvdev.basetemplate.fragments.TestFirstFragment;
-import com.cdvdev.basetemplate.fragments.TestSecondFragment;
+import com.cdvdev.basetemplate.views.fragments.TestFirstFragment;
+import com.cdvdev.basetemplate.views.fragments.TestSecondFragment;
 import com.cdvdev.basetemplate.interfaces.FragmentsListener;
 
 public class MainActivity extends BaseActivity implements FragmentsListener{

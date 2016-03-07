@@ -3,13 +3,15 @@ with Fragments, also ListFragment+SwipeRefresh
 
 #### Source Structure:
 
-* ```com.example.myapp.activities``` - Contains all activities
-* ```com.example.myapp.fragments``` - Contains all fragments
-* ```com.example.myapp.adapters``` - Contains all custom adapters
+
 * ```com.example.myapp.models``` - Contains all our data models
 * ```com.example.myapp.helpers``` - Contains all helpers supporting code.
 * ```com.example.myapp.interfaces``` - Contains all interfaces
-* ```com.example.myapp.views``` - Contains all custom views
+* ```com.example.myapp.views``` - Contains all views
+* ```com.example.myapp.views.activities``` - Contains all activities
+* ```com.example.myapp.views.fragments``` - Contains all fragments
+* ```com.example.myapp.views.adapters``` - Contains all adapters
+* ```com.example.myapp.views.custom``` - Contains all custom views
 
 see also [Examples](http://guides.codepath.com/android/Organizing-your-Source-Files#android-folder-structure)
 

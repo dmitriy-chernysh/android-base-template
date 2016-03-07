@@ -1,4 +1,4 @@
-package com.cdvdev.basetemplate.adapters;
+package com.cdvdev.basetemplate.views.adapters;
 
 import android.app.Activity;
 import android.content.Context;

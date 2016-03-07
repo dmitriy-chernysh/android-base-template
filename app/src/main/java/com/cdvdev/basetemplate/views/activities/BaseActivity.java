@@ -1,4 +1,4 @@
-package com.cdvdev.basetemplate.activities;
+package com.cdvdev.basetemplate.views.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
