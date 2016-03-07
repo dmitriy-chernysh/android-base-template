@@ -16,15 +16,53 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        //generate apk with custom name
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    def fileName = variant.productFlavors[0].applicationId + "-v" + defaultConfig.versionName + "-" + variant.buildType.name + ".apk";
+                    output.outputFile = new File(outputFile.parent, fileName);
+                }
+            }
+        }
+
     }
+
+    productFlavors {
+        production {
+            applicationId defaultConfig.applicationId
+            versionName defaultConfig.versionName
+        }
+
+        demo {
+            applicationId defaultConfig.applicationId + ".demo"
+            versionName defaultConfig.versionName + "-demo"
+        }
+    }
+
     sourceSets {
         main {
             res.srcDirs = [
                     'src/main/res',
                     'src/main/res/layouts/activity',
                     'src/main/res/layouts/fragment',
-                    'src/main/res/layouts/adapter'
-                    , 'src/main/res/layouts/appbar']
+                    'src/main/res/layouts/adapter',
+                    'src/main/res/layouts/appbar',
+                    'src/main/res/other'
+                    , 'src/main/res/layouts/other']
+        }
+
+        demo {
+            res.srcDirs = [
+                    'src/demo/res',
+                    'src/demo/res/layouts/activity',
+                    'src/demo/res/layouts/fragment',
+                    'src/demo/res/layouts/adapter',
+                    'src/demo/res/layouts/appbar',
+                    'src/demo/res/other'
+            ]
         }
     }
 }
